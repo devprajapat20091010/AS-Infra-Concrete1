@@ -46,7 +46,7 @@ service cloud.firestore {
     // Helper functions
     function isAdmin() {
       return request.auth != null && 
-             (request.auth.token.email.matches('.*@heritagereadymix\\.com$') ||
+             (request.auth.token.email.matches('.*@asinfraconcrete\\.com$') ||
               isAuthorizedUID());
     }
     
@@ -71,9 +71,9 @@ service cloud.firestore {
   "authorized": {
     "uids": ["your-admin-uid-here"],
     "emails": [
-      "admin@heritagereadymix.com",
-      "manager@heritagereadymix.com",
-      "owner@heritagereadymix.com"
+      "admin@asinfraconcrete.com",
+      "manager@asinfraconcrete.com",
+      "seals@asinfraconcrete.com"
     ]
   }
 }`

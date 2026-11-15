@@ -124,13 +124,13 @@ export default function SecurityTest() {
       id: 'email-domain-validation',
       title: 'Email Domain Validation',
       description:
-        'Test if only @heritagereadymix.com emails have admin access',
+        'Test if only @asinfraconcrete.com emails have admin access',
       test: async () => {
         if (!user) {
           return { success: false, message: 'No user logged in' }
         }
 
-        const isValidDomain = user.email?.endsWith('@heritagereadymix.com')
+        const isValidDomain = user.email?.endsWith('@asinfraconcrete.com')
         if (isValidDomain) {
           return { success: true, message: `Valid admin domain: ${user.email}` }
         } else {
